@@ -17,8 +17,6 @@ If you utilize this repository and our work, please cite:
   year      = {2024},
   address   = {Bangkok, Thailand},
   publisher = {Association for Computational Linguistics},
-  pages     = {XXXX--XXXX},
-  url       = {https://openreview.net/forum?id=ljhSYqAEIG}
 }
 ```
 
