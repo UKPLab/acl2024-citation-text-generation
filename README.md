@@ -32,6 +32,12 @@ https://www.tu-darmstadt.de/
 
 Don't hesitate to send us an e-mail or report an issue, if something is broken (and it shouldn't be) or if you have further questions.
 
+## Project Summary
+
+The main objective of this project is to generate related work section paragraphs based on citing-cited paper abstracts, free-form citation intents, and example citation sentences by leveraging Llama-2 Chat and GPT 3.5 Turbo models.
+
+The following codes (1) create the related work dataset based on ACL Anthology Corpus, (2) generate the free-form citation intents, and (3) generate the related work paragraphs by using the properties obtained in previous steps. 
+
 ## Project structure
 
 Project structure can be found below. Each script is explained in the following sections.
