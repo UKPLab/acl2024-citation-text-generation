@@ -4,26 +4,11 @@
   <img src="logo.png" alt="drawing" width="350">
 <p align="center">
 
-This repository contains code and resources related to the paper "Systematic Task Exploration with LLMs: A Study in Citation Text Generation", published at main conference ACL 2024.
-
-If you utilize this repository and our work, please cite:
-
-```bibtex
-@InProceedings{sahinuc2024citation-text-generation,
-  author    = {Furkan \c{S}ahinu\c{c} and Ilia Kuznetsov and Yufang Hou and Iryna Gurevych},
-  title     = {Systematic Task Exploration with {LLM}s: A Study in Citation Text Generation},
-  booktitle = {The 62nd Annual Meeting of the Association for Computational Linguistics},
-  month     = aug,
-  year      = {2024},
-  address   = {Bangkok, Thailand},
-  publisher = {Association for Computational Linguistics},
-}
-```
+This repository contains code and resources related to the paper "[Systematic Task Exploration with LLMs: A Study in Citation Text Generation](https://arxiv.org/abs/2407.04046)", published at main conference ACL 2024.
 
 > **Abstract:** Large language models (LLMs) bring unprecedented flexibility in defining and executing complex, creative natural language generation (NLG) tasks. Yet, this flexibility brings new challenges, as it introduces new degrees of freedom in formulating the task inputs and instructions and in evaluating model performance. To facilitate the exploration of creative NLG tasks, we propose a three-component research framework that consists of systematic input manipulation, reference data, and output measurement. We use this framework to explore citation text generation -- a popular scholarly NLP task that lacks consensus on the task definition and evaluation metric and has not yet been tackled within the LLM paradigm. Our results highlight the importance of systematically investigating both task instruction and input configuration when prompting LLMs, and reveal non-trivial relationships between different evaluation metrics used for citation text generation. Additional human generation and human evaluation experiments provide new qualitative insights into the task to guide future research in citation text generation.
 
-
-Contact person: Furkan Şahinuç, [furkan.sahinuc@tu-darmstadt.de](mailto:furkan.sahinuc@tu-darmstadt.de)
+✉️ Contact person: Furkan Şahinuç, [furkan.sahinuc@tu-darmstadt.de](mailto:furkan.sahinuc@tu-darmstadt.de)
 
 https://www.ukp.tu-darmstadt.de/
 
@@ -44,20 +29,20 @@ Project structure can be found below. Each script is explained in the following 
 
 ```
 .
-├── data-construction
+├── 📂 data-construction
 │   ├── cleaning.py
 │   ├── corrupted_abstracts.txt
 │   ├── extract_cited_papers_for_examples.py
 │   ├── extract_rws.py
 │   ├── inspect_data.ipynb
 │   └── title_duplicate_instances.tsv
-├── intent-generation
+├── 📂 intent-generation
 │   ├── categorical_intent_generation.py
 │   ├── configs.py
 │   ├── example_intents.tsv
 │   ├── generate_intents.py
 │   └── model_init.py
-├── paragraph-generation
+├── 📂 paragraph-generation
 │   ├── auto_eval.py
 │   ├── configs.py
 │   ├── generate_paragraphs_gpt.py
@@ -73,7 +58,6 @@ Project structure can be found below. Each script is explained in the following 
 ├── NOTICE
 ├── README.md
 └── requirements.txt
-
 ```
 
 ## Installation
@@ -367,6 +351,23 @@ python surface_eval.py --dataset_path /path/to/relaed/work/dataset/ --model_outp
 ```
 
 Parameter explanation: Parameters are the same as previous measurement.
+
+## Citation
+
+If you utilize this repository and our work, please cite:
+
+```bibtex
+@inproceedings{sahinuc2024citation-text-generation,
+  author    = {Furkan \c{S}ahinu\c{c} and Ilia Kuznetsov and Yufang Hou and Iryna Gurevych},
+  title     = {Systematic Task Exploration with {LLM}s: A Study in Citation Text Generation},
+  booktitle = {The 62nd Annual Meeting of the Association for Computational Linguistics},
+  month     = aug,
+  year      = {2024},
+  url       = {https://arxiv.org/abs/2407.04046}
+  address   = {Bangkok, Thailand},
+  publisher = {Association for Computational Linguistics},
+}
+```
 
 ## Disclaimer
 
