@@ -362,7 +362,7 @@ If you utilize this repository and our work, please cite:
 ```bibtex
 
 @inproceedings{sahinuc-etal-2024-systematic,
-  author    = {\c{S}}ahinu{\c{c}}, Furkan and Kuznetsov, Ilia and Hou, Yufang and Gurevych, Iryna},
+  author    = {{\c{S}}ahinu{\c{c}}, Furkan and Kuznetsov, Ilia and Hou, Yufang and Gurevych, Iryna},
   title     = {Systematic Task Exploration with {LLM}s: A Study in Citation Text Generation},
   booktitle = {Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)},
   month     = aug,
