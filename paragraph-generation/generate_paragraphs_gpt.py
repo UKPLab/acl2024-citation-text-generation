@@ -32,8 +32,6 @@ def generate_paragraphs(config, instances, examples, intents, categorical_intent
     else:
         raise Exception("Invalid prompt type.")
 
-    deployment_name = config.model_path
-
     outputs = []
     costs = []
 
@@ -50,7 +48,7 @@ def generate_paragraphs(config, instances, examples, intents, categorical_intent
         else:
             raise Exception("Invalid prompt type.")
 
-        response = client.chat.completions.create(model=deployment_name, messages=message, max_tokens=config.max_new_tokens, seed=config.seed)
+        response = client.chat.completions.create(model=config.deployment_name, messages=message, max_tokens=config.max_new_tokens, seed=config.seed)
 
         outputs.append({'url': masked_instances.loc[i]['url'],
                         'prompt': prompt_concat,
@@ -106,7 +104,8 @@ if __name__ == '__main__':
     parser.add_argument('--intent_file', required=True, type=str)
     parser.add_argument('--categorical_intent_file', required=True, type=str)
     parser.add_argument('--model_type', default='gpt', type=str)
-    parser.add_argument('--model_path', default='gpt-35-turbo-0613-16k', type=str)
+    parser.add_argument('--deployment_name', required=True, type=str)
+    parser.add_argument('--model_path', default='', type=str) # Not used
     parser.add_argument('--output_path', required=True, type=str)
     parser.add_argument('--prompt_file', default='system_prompts.json', type=str)
     parser.add_argument('--prompt_type', required=True, type=str)

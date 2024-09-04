@@ -279,6 +279,9 @@ You can simply run following command to generate related work paragraph via GPT-
 python generate_paragraphs_gpt.py --env_file_path /your/API/key/file/ --exp_id "t-6-i-e" --input_file /related/work/dataset/path/ --example_file /example/citation/sentence/data/path/ --intent_file /intent/data/path/ --model_path /path/to/llama2/weights/ --output_path /your/output/path/ --prompt_type "type-6"  --use_intent --use_example
 ```
 
+> [!NOTE]  
+> Based on the utilized model, please adjust cost calculation prices.
+
 Parameter explanation:
 
 Parameters are the same as above except following.
@@ -289,8 +292,8 @@ Parameters are the same as above except following.
 * ```model_type```
   * Model type name. Default value is "gpt".
 
-* ```model_path```
-  * Model specification for GPT releases. Default value is "gpt-35-turbo-0613-16k". 
+* ```deployment_name```
+  * Deployment name depending on your API specifications.
 
 ## Evaluation
 
@@ -357,15 +360,17 @@ Parameter explanation: Parameters are the same as previous measurement.
 If you utilize this repository and our work, please cite:
 
 ```bibtex
-@inproceedings{sahinuc2024citation-text-generation,
-  author    = {Furkan \c{S}ahinu\c{c} and Ilia Kuznetsov and Yufang Hou and Iryna Gurevych},
+
+@inproceedings{sahinuc-etal-2024-systematic,
+  author    = {\c{S}}ahinu{\c{c}}, Furkan and Kuznetsov, Ilia and Hou, Yufang and Gurevych, Iryna},
   title     = {Systematic Task Exploration with {LLM}s: A Study in Citation Text Generation},
-  booktitle = {The 62nd Annual Meeting of the Association for Computational Linguistics},
+  booktitle = {Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)},
   month     = aug,
   year      = {2024},
-  url       = {https://arxiv.org/abs/2407.04046}
+  url       = {https://aclanthology.org/2024.acl-long.265}
   address   = {Bangkok, Thailand},
   publisher = {Association for Computational Linguistics},
+  pages     = {4832--4855}
 }
 ```
 

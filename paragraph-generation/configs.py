@@ -31,6 +31,9 @@ def get_config(args):
     # Model type
     config.model_type = args.model_type
 
+    # Deployment name for GPT
+    config.deployment_name = args.deployment_name
+
     # Model path
     config.model_path = args.model_path
 

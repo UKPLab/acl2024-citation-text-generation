@@ -92,8 +92,8 @@ def main(config):
 if __name__ == '__main__':
 
     parser = argparse.ArgumentParser()
-    # Not used
-    parser.add_argument('--env_file_path', default='', type=str)
+
+    parser.add_argument('--env_file_path', default='', type=str) # Not used
     parser.add_argument('--exp_id', required=True, type=str)
     parser.add_argument('--num_examples', default=1, type=int)
     parser.add_argument('--input_file', required=True, type=str)
@@ -101,6 +101,7 @@ if __name__ == '__main__':
     parser.add_argument('--intent_file', required=True, type=str)
     parser.add_argument('--categorical_intent_file', required=True, type=str)
     parser.add_argument('--model_type', default='llama-2', type=str)
+    parser.add_argument('--deployment_name', default='', type=str) # Not used
     parser.add_argument('--model_path', required=True, type=str)
     parser.add_argument('--output_path', required=True, type=str)
     parser.add_argument('--prompt_file', default='system_prompts.json', type=str)
