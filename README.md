@@ -276,7 +276,7 @@ Parameter explanation:
 You can simply run following command to generate related work paragraph via GPT-3.5 Turbo. Following example utilize free-form intent and citation sentence examples for prompt type 6 with default settings.
 
 ```
-python generate_paragraphs_gpt.py --env_file_path /your/API/key/file/ --exp_id "t-6-i-e" --input_file /related/work/dataset/path/ --example_file /example/citation/sentence/data/path/ --intent_file /intent/data/path/ --model_path /path/to/llama2/weights/ --output_path /your/output/path/ --prompt_type "type-6"  --use_intent --use_example
+python generate_paragraphs_gpt.py --env_file_path /your/API/key/file/ --exp_id "t-6-i-e" --input_file /related/work/dataset/path/ --example_file /example/citation/sentence/data/path/ --intent_file /intent/data/path/ --deployment_name /api/deployment/name/ --output_path /your/output/path/ --prompt_type "type-6"  --use_intent --use_example
 ```
 
 > [!NOTE]  
